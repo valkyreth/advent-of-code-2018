@@ -27,11 +27,13 @@ for x in range(len(lines)):
         diff = 0
         ans = ''
         for i in range(len(lines[x])):
+            if diff > 1:
+                break
             if lines[x][i] != lines[y][i]:
                 diff += 1
             else:
                 ans += lines[x][i]
-        if diff == 1:
+        else:
             check = True
             break
     if check:
