@@ -1,8 +1,8 @@
 from itertools import cycle
 
-with open('day1.txt', 'r') as file:
+with open('input.txt', 'r') as file:
     freqs = [int(i) for i in file.read().split('\n')]
-    
+
 # Part 1
 
 total = sum(freqs)
