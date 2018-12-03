@@ -2,6 +2,9 @@ with open('input.txt', 'r') as f:
     lines = f.read().splitlines()
 
 fabric = [[0 for j in range(1000)] for i in range(1000)]
+
+# Part 1
+
 overlap_area = 0
 
 for line in lines:
@@ -17,6 +20,8 @@ for line in lines:
                 fabric[column][row] = 1
 
 print(f'Part 1 => {overlap_area}')
+
+# Part 2
 
 for line in lines:
     tokens = line.split()
