@@ -26,7 +26,6 @@ print(f'Part 1 => {shortest}')
 
 for unit in set(polymer_copy.lower()):
     temp = polymer_copy.replace(unit, '').replace(unit.upper(), '')
-    delete = False
     i = 0
     while i < len(temp) - 1:
         delete = False
