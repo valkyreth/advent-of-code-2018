@@ -41,5 +41,6 @@ for unit in set(polymer_copy.lower()):
     if len(temp) < shortest:
         shortest = len(temp)
 
-print(shortest)
+print(f'Part 2 => {shortest}')
+
 print(time.time() - a)
